@@ -4,12 +4,14 @@
     background-size: cover;
     background-image: url(https://revistaronda.net/wp-content/uploads/2020/12/la-casa-de-papel-2.jpg);
     text-align: center;
-    background-position: bottom;
-}
+    background-position: center;
+    background-blend-mode: saturation;
 
+}
 .cabecera{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.199);
+    /* ackground-color: rgba(0, 0, 0, 0.199); */
+    justify-content: space-between;
   
 }
 .cabecera a{
@@ -46,6 +48,10 @@ h1{
 }
 .logo-search{
     height: 2rem !important;
+    
+}
+.logo-search-container{
+    margin-right: 5rem;
 }
 .movie-description{
     width: 100%;
