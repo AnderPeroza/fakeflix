@@ -8,11 +8,19 @@
     background-blend-mode: saturation;
 
 }
+
 .cabecera{
     display: flex;
     /* ackground-color: rgba(0, 0, 0, 0.199); */
     justify-content: space-between;
   
+}
+.redes-sociales-container{
+    margin-top: 6rem;
+
+}
+.redes-sociales-container img{
+    margin: 0 0.3rem;
 }
 .cabecera a{
     
@@ -39,6 +47,26 @@ body{
     color: #F3F3F3;
     background-color:  #141414;
     font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+}
+ .text-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+   
+}
+.genero-title{
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+} 
+.text-footer a{
+    color: #686868;
+    text-decoration: none;
+    margin: 0.3rem 0;
+}
+.text-footer div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
 }
 h1{
     margin: 0%;
@@ -103,10 +131,17 @@ h1{
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 799px) {
     .categories h1{
         display: flex;
         margin-left: 9rem;
+    }
+    .logo-search-container{
+        display: block !important;
+    }
+    .text-footer{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (min-width: 800px) {
@@ -127,6 +162,13 @@ h1{
         width: 400px;
         display: flex;
 
+    }
+    .movies img{
+        transition: 0.5s;
+        /* object-fit: cover; */
+    }
+    .movies img:hover{
+       transform: scale(1.2);
     }
     
 }
