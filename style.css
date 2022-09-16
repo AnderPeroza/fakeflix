@@ -1,174 +1,82 @@
-.main-section{
-    width: 100%;
-    height: 90vh;
-    background-size: cover;
-    background-image: url(https://revistaronda.net/wp-content/uploads/2020/12/la-casa-de-papel-2.jpg);
-    text-align: center;
-    background-position: center;
-    background-blend-mode: saturation;
-
-}
-
-.cabecera{
-    display: flex;
-    /* ackground-color: rgba(0, 0, 0, 0.199); */
-    justify-content: space-between;
-  
-}
-.redes-sociales-container{
-    margin-top: 6rem;
-
-}
-.redes-sociales-container img{
-    margin: 0 0.3rem;
-}
-.cabecera a{
-    
-    margin: 0.4rem 0.4rem;
-    font-size: 1.3rem;
-    
-    text-decoration: none;
-    
-}
-.cabecera div{
-    display: none;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    
-}
-.cabecera img{
-    margin-left: 2.5rem;
-    margin-top: 0.5rem;
-    height: 3rem;
-}
 body{
     margin: 0;
     padding: 0;
-    color: #F3F3F3;
-    background-color:  #141414;
-    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    background-color: rgb(34, 95, 44);
+    font-family: 'Poppins', sans-serif;
 }
- .text-footer{
+
+.p{
+    margin: 0;
+}
+
+.char-card{
+    margin: 0.5rem;
     display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
-   
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
-.genero-title{
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
-} 
-.text-footer a{
-    color: #686868;
-    text-decoration: none;
+
+.char-image{
+    width: 190px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.char-info-container{
+    padding: 0.2rem 0.5rem;
+}
+
+.char.info{
     margin: 0.3rem 0;
-}
-.text-footer div{
-    display: flex;
-    flex-direction: column;
-    margin-right: 3rem;
-}
-h1{
-    margin: 0%;
-}
-.pc-image{
-    display: none;
-}
-.logo-search{
-    height: 2rem !important;
-    
-}
-.logo-search-container{
-    margin-right: 5rem;
-}
-.movie-description{
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4.5rem;
-}
-.play-button{
-    background-color: #E50914;
-    border: 0;
-    border-radius: 8%;
-    color: #F3F3F3;
-    height: 2rem;
-    width: 6rem;
-    
-}
-.info-button{
-    background-color: rgba(102, 102, 102, 0.658);
-    border: 0;
-    border-radius: 8%;
-    color: #F3F3F3;
-    height: 2rem;
-    width: 6rem;
-}
-.div-buttons button{
-    margin: 1rem 0.2rem;
+
 }
 
-.categories img{
-    width: 100%;
-    height: 100%;
-    
+#char-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0.3rem;
 }
 
-.movies{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
+.link{
+    color: aliceblue;
+    text-align: center;
+    padding: 1rem;
 }
-.movies div{
-    
-    width: 320px;
-    height: 200px;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-}
-@media screen and (min-width: 320px) and (max-width: 799px) {
-    .categories h1{
-        display: flex;
-        margin-left: 9rem;
-    }
-    .logo-search-container{
-        display: block !important;
-    }
-    .text-footer{
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media screen and (min-width: 800px) {
-    .cabecera div{
-        display: block;
-       
-    }
-    .cabecera a{
-        color: #F3F3F3;
-    }
-    .movil-image{
-        display: none;
-    }
-    .pc-image{
-        display: block;
-    }
-    .movie-description{
-        width: 400px;
-        display: flex;
 
+.pages{
+    color: aliceblue;
+    text-align: center;
+    padding: 1rem;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-grey{
+    color: gray;
+}
+
+.char-search{
+    /* padding-left: 9rem; */
+    text-align: justify;
+    padding: 1rem;
+}
+
+/* media queries:
+    560=tablet
+    860=desktop
+*/
+
+@media (min-width: 560px) {
+    #char-container{
+        grid-template-columns: 1fr 1fr;
     }
-    .movies img{
-        transition: 0.5s;
-        /* object-fit: cover; */
+}
+
+@media (min-width: 860px) {
+    #char-container{
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    .movies img:hover{
-       transform: scale(1.2);
-    }
-    
 }

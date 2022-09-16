@@ -4,281 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick y Morty</title>
+
+    <link rel="icon" href="favicon.png" type="image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <div class="main-section">
-        <header class="cabecera">
-            <div style="display: flex;">
-                <img class="movil-image" src="https://res.cloudinary.com/deykerg123/image/upload/v1658190376/fakeflix-assets/clvdxpcufp0vbbkxkwdp.png" alt="imgae-logo">
-                <img class="pc-image" src="https://res.cloudinary.com/deykerg123/image/upload/v1658190376/fakeflix-assets/uwrjddzw0qjngfu7lhzc.png" alt="imgae-logo">
-           
-                <div>
-                    <a href="">
-                        Home
-                    </a>
-                    <a href="">TVseries</a>
-                    <a href="">Movies</a>
-                    <a href="">New & Popular</a>
-                    <a href="">My list</a>
-                </div>
-            </div>
-            <div class="logo-search-container">
-                <img height="20" class="logo-search" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-gris.png" alt="">
-            </div>
-            
-
-        </header>
-        <div class="movie-description">
-            <h1>
-                La Casa de Papel
-            </h1>
-            <div class="div-buttons">
-                <button class="play-button">
-                    Play
-                </button>
-                <button class="info-button">
-                    More info
-                </button>
-            </div> 
-           <div>
-            <p>Una banda organizada de ladrones se propone cometer el atraco del siglo en la Fábrica Nacional de Moneda y Timbre. Cinco meses de preparación quedarán reducidos a once días para poder llevar a cabo con éxito el gran golpe.</p>
-           </div>
-            
+    
+    <div style="display: flex; justify-content: space-between;"> 
+        <div>
+            <label class="pages" for="">Pages: </label>
+            <select name="" id="char-pages" class="txt">
+            </select> 
         </div>
+       
 
-        <div class="categories">
-            <div>
-                <h1>Accion</h1>
-            </div>
-            <div class="movies">
-                
-                
-                <div>
-                    <img src="https://www.mundopeliculas.tv/wp-content/uploads/2021/05/rapidos-y-furiosos-9.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://occ-0-784-56.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWsKNkGWFrr_sUiTNEE26sP8KSRszINYsAv-vkHgTrRCvVgBgT0msy7iKpIy865FnZcdqz1jKVhrQhLaH6vuEYsegoExXOE-3c-I.jpg?r=2fa" alt="">
-                </div>
-                <div>
-                    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2022/04/morbius-2663167.jpg?itok=bVLxtV41" alt="">
-                </div>
-                <div>
-                    <img src="https://i1.wp.com/www.vibesofindia.com/wp-content/uploads/2021/11/Red-Notice.jpg?fit=1200%2C630&ssl=1" alt="">
-                </div>
-                <div>
-                    <img src="https://images7.alphacoders.com/112/1121056.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://spotlight-cl.cdn.telefonica.com/customer/v1/source?image=http%3A%2F%2Fmedia.gvp.telefonica.com%2Fstoragearea0%2FIMAGES%2F00%2F08%2F93%2F8936240_AB97CC9BCA5B7D15.jpg&width=1400&height=787&resize=CROP&format=JPEG" alt="">
-                </div>
-                <div>
-                    <img src="https://fondosmil.com/fondo/45327.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://wallpapercave.com/wp/wp1867311.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://cdn.elnacional.com/wp-content/uploads/2018/05/netflix-publico-trailer-oficial-segunda-temporada-marvel-luke-cage_234225.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://www.pdvg.it/wp-content/uploads/2020/03/castlevania-terza-stagione.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="genero-title">
-                <h1>Comedia</h1>
-            </div>
-
-            <div class="movies">
-                <div>
-                    <img src="https://www.wallpaperuse.com/wallp/32-323351_m.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://images3.alphacoders.com/589/thumb-1920-589205.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://occ-0-1217-37.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUKD30uJe4fzEJNPWssahYzFzGR41s7o4Jho4Bs12BaAOQfQZ__zsK5gep43y9mTS_c_HH70r3nX-eh1za942SoBZHoLcn4Du_6B.jpg?r=2e2" alt="">
-                </div>
-                <div>
-                    <img src="https://m.media-amazon.com/images/S/pv-target-images/9a55eac4bd556d1511b804f83f41098454382affa79716471de766d0c8a59cf4._UR1920,1080_.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://images6.alphacoders.com/112/1120879.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://www.xtrafondos.com/wallpapers/los-croods-1081.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://hbomax-images.warnermediacdn.com/images/GYHd8vAN7YMLCwgEAAABB/tileburnedin?size=1280x720&partner=hbomaxcom&v=edc72350d1b698ab0c30cec6f1beb359&host=art-gallery.api.hbo.com&language=es-419&w=1280" alt="">
-                </div>
-                <div>
-                    <img src="https://hbomax-images.warnermediacdn.com/images/GYQf8wgXQHsI2nAEAAABp/tileburnedin?size=1280x720&partner=hbomaxcom&v=123ef726041fc1d3321d3a2bb0f89152&host=art-gallery.api.hbo.com&language=es-es&w=1280" alt="">
-                </div>
-                <div>
-                    <img src="https://elcomercio.pe/resizer/5h0ShG5K1aO7sFZnnieoGSHs1Go=/1200x675/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/T52LJGULLZFKJEKWQRKL6VO2HA.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://hbomax-images.warnermediacdn.com/images/GXyhs-QTFh8PCwgEAAABy/tileburnedin?size=1280x720&partner=hbomaxcom&v=fd6064f1c1f32db49b4cf9b7c38ccfcd&host=art-gallery.api.hbo.com&language=es-419&w=1280" alt="">
-                </div>
-               
-            </div>
-
-            <div class="genero-title">
-                <h1>Terror</h1>
-            </div>
-            <div class="movies">
-                <div>
-                    <img src="https://www.proyectorfantasma.com.ar/wp-content/uploads/2016/06/maxresdefault-1-810x456.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://occ-0-3212-1380.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS69DwoRbZUNmWBQG_SsuD8HWxOkeVSnRIZZfsyNBKe2X7kxOAknbwU0V1MX88n3UYQJzsKZaGpxYu_6hAb52Acm94WKU4_2E_CQ.jpg?r=734" alt="">
-                </div>
-                <div>
-                    <img src="https://larepublica.pe/resizer/5wVHpfXDtdmg6YSr3PN8-M76giE=/1200x660/top/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/RTKYQWHL7VCLDIOWVGJZSJDQFU.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://hbomax-images.warnermediacdn.com/images/GYcUG1AcpBryLwwEAAADU/tileburnedin?size=1280x720&partner=hbomaxcom&v=36a9fffc87edd72bcfce10050ddcb49a&host=art-gallery.api.hbo.com&language=es-419&w=1280" alt="">
-                </div>
-                <div>
-                    <img src="https://i.ytimg.com/vi/bWfn3q10s_A/maxresdefault.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://hbomax-images.warnermediacdn.com/images/GYJxoQQXAXZqpgQEAAAA3/tileburnedin?size=1280x720&partner=hbomaxcom&v=2379bff7eb9e2eee542acfd794d5ad5e&host=art-gallery.api.hbo.com&language=es-419&w=1280" alt="">
-                </div>
-                <div>
-                    <img src="https://occ-0-590-586.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb1BYefdFqy_dr-gql_Q_7YZAguSVNdFPn7uK2xXEg8Ovr-IixYtWeCVIod8wpE_8vXqh6WOMMvjlXMSuvIWC1ti5_XhifhY-c2w.jpg?r=267" alt="">
-                </div>
-                <div>
-                    <img src="https://lomasdetafi.com.ar/wp-content/uploads/2021/05/multimedia.normal.8d597732cc382fd9.6c6c6f726f6e615f6e6f726d616c2e6a7067.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://i.blogs.es/6c501d/it/450_1000.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://hbomax-images.warnermediacdn.com/images/GXdu2RAwNtJuAuwEAADZy/tileburnedin?size=1280x720&partner=hbomaxcom&v=34f010649ca8b25caf9cf60ddae43456&host=art-gallery.api.hbo.com&language=es-419&w=1280" alt="">
-                </div>
-                
-                
-            </div>
-            <div class="genero-title">
-                <h1>Anime</h1>
-            </div>
-            <div class="movies">
-                <div>
-                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/6RFJVYL3SRCLZBUAWIMLIBPVIY.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://www.koi-nya.net/img/subidos_posts/2013/07/Revelados-nuevos-personajes-del-cast-de-Blood-Lad.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/a20232bb3ab048663355ec25cc7529d497eb083c3c74294cba97ae72bb22b4d8._UY500_UX667_RI_V_TTW_.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://ytlandia.es/wp-content/uploads/2022/05/cats-13-1400x700.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://www.gamerfocus.co/wp-content/uploads/2018/09/dragon_ball_super_16.png" alt="">
-                </div>
-                <div>
-                    <img src="https://as01.epimg.net/meristation/imagenes/2022/07/04/noticias/1656927624_897597_1656927773_noticia_normal.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://areajugones.sport.es/wp-content/uploads/2022/06/rentagirlfriend-asasasa.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://as01.epimg.net/meristation/imagenes/2022/05/26/noticias/1653557269_040579_1653557380_noticia_normal.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://media.redadn.es/imagenes/animanga-0_335644_pn3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/03/my-dress-up-darling.jpg" alt="">
-                </div>
-            </div>
-            
-            
-            
-            
-            
-            <div class="genero-title">
-                <h1>Familiar</h1>
-            </div>
-            <div class="movies">
-                <div>
-                    <img src="https://www.mundopeliculas.tv/wp-content/uploads/2021/05/rapidos-y-furiosos-9.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://occ-0-784-56.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWsKNkGWFrr_sUiTNEE26sP8KSRszINYsAv-vkHgTrRCvVgBgT0msy7iKpIy865FnZcdqz1jKVhrQhLaH6vuEYsegoExXOE-3c-I.jpg?r=2fa" alt="">
-                </div>
-                <div>
-                    <img src="https://www.wallpaperuse.com/wallp/32-323351_m.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://images3.alphacoders.com/589/thumb-1920-589205.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://www.proyectorfantasma.com.ar/wp-content/uploads/2016/06/maxresdefault-1-810x456.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://occ-0-3212-1380.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS69DwoRbZUNmWBQG_SsuD8HWxOkeVSnRIZZfsyNBKe2X7kxOAknbwU0V1MX88n3UYQJzsKZaGpxYu_6hAb52Acm94WKU4_2E_CQ.jpg?r=734" alt="">
-                </div>
-                <div>
-                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/6RFJVYL3SRCLZBUAWIMLIBPVIY.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://www.koi-nya.net/img/subidos_posts/2013/07/Revelados-nuevos-personajes-del-cast-de-Blood-Lad.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/a20232bb3ab048663355ec25cc7529d497eb083c3c74294cba97ae72bb22b4d8._UY500_UX667_RI_V_TTW_.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://ytlandia.es/wp-content/uploads/2022/05/cats-13-1400x700.jpg" alt="">
-                </div>
-            </div>
-
-
+        <div class="char-search" >
+            <input id="search-input" type="text">
+            <button id="search-btn">search</button>
         </div>
-        <footer class="Footer">
-            <div class="redes-sociales-container">
-                
-                <img height="30" src="https://cdn.icon-icons.com/icons2/792/PNG/512/FB_icon-icons.com_65534.png" alt="">
-                <img height="30" src="https://cdn.icon-icons.com/icons2/792/PNG/512/INSTAGRAM_icon-icons.com_65535.png" alt="">
-                <img height="30" src="https://cdn.icon-icons.com/icons2/792/PNG/512/TWITTER_icon-icons.com_65536.png" alt="">
-                <img height="30" src="https://cdn.icon-icons.com/icons2/792/PNG/128/YOUTUBE_icon-icons.com_65537.png" alt="">
-                
-            </div>
-            <div class="text-footer">
-                <div>
-                    <a href="">Audio and Subtitles</a>
-                    <a href="">Audio Description</a>
-                    <a href="">Help Center</a>
-                </div>
-                
-                
-
-                
-                <div>
-                    <a href="">Gift Cards</a>
-                    <a href="">Media Center</a>
-                    <a href="">Investor Relation</a>
-                </div>
-                <div>
-                    <a href="">Jobs</a>
-                    <a href="">Terms of Use</a>
-                    <a href="">Privacy</a>
-                </div>
-                
-                <div>
-                    <a href="">Legal Notices</a>
-                    <a href="">Corporate Information</a>
-                    <a href="">Contact Us</a>
-                </div>
-            </div>
-            
-        </footer>
+        
+       
+    </div>
+   
+    
+    
+    
+    <div id="char-container">
+    </div>
+    <div style="display: flex; text-align: center; justify-content: center; ">
+        <a class="link" href="episode.html" style="font-size: 30px; text-decoration: none;">Ver episodios</a>
     </div>
     
 </body>
